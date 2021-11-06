@@ -1,0 +1,32 @@
+{
+  "name": "ip-to-country-csv-converter",
+  "version": "1.0.0",
+  "description": "Convert free IP location databases to eMule format ip-to-country.csv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emulefanscom/ip-to-country-csv-converter.git"
+  },
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "homepage": "https://www.emulefans.com/news/plugin/ip-to-country/",
+  "keywords": [
+    "emule",
+    "ip-to-country.csv",
+    "ip",
+    "location",
+    "country",
+    "city",
+    "database"
+  ],
+  "author": "Tom Chen <tomchen.org@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.16.3",
+    "csv-stringify": "^5.6.5",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6"
+  }
+}
