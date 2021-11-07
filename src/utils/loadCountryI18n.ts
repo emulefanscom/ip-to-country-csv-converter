@@ -1,6 +1,6 @@
 import path from 'path'
 import loadCsv from './loadCsv'
-import langs from './langs'
+import langs from '../langs'
 
 const loadCountryI18n = async (
   lang: string,
@@ -9,7 +9,10 @@ const loadCountryI18n = async (
     throw new Error('Language does not exist!')
   }
   return Object.fromEntries(
-    await loadCsv(path.join(__dirname, `../country_codes/${lang}.csv`), '\t'),
+    await loadCsv(
+      path.join(__dirname, `../../country_codes/${lang}.csv`),
+      '\t',
+    ),
   )
 }
 

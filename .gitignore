@@ -1,7 +1,8 @@
 /dist
 ip-to-country.csv
-ip-to-country.temp.csv
+*.temp.csv
 /temp
+/output*
 
 # Logs
 logs

@@ -7,7 +7,12 @@
     "url": "https://github.com/emulefanscom/ip-to-country-csv-converter.git"
   },
   "scripts": {
-    "start": "tsc && node dist/index.js"
+    "clear": "rimraf dist",
+    "docountry": "yarn clear && tsc && node dist/docountry.js",
+    "docity": "yarn clear && tsc && node dist/docity.js",
+    "docncity": "yarn clear && tsc && node dist/docncity.js",
+    "zip": "yarn clear && tsc && node dist/zip.js",
+    "rmzip": "rimraf output*/**/*.zip"
   },
   "homepage": "https://www.emulefans.com/news/plugin/ip-to-country/",
   "keywords": [
@@ -22,11 +27,15 @@
   "author": "Tom Chen <tomchen.org@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "archiver": "^5.3.0",
     "csv-parse": "^4.16.3",
     "csv-stringify": "^5.6.5",
+    "iconv-lite": "^0.6.3",
+    "rimraf": "^3.0.2",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
+    "@types/archiver": "^5.1.1",
     "@types/node": "^16.11.6"
   }
 }

@@ -1,4 +1,4 @@
-const langs = {
+const langs: Record<string, string> = {
   en: 'cp1252',
   fr: 'cp1252',
   de: 'cp1252',
