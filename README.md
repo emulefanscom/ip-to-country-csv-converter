@@ -42,13 +42,13 @@ yarn docity
 
 The file will be generated in their **/output_city/en** folder.
 
-You can change the language in **./src/config.ts** file (`config.city.lang`), the script will only localize the country name. But for now, it's not recommended to use any non-English language for city-level ip2c, because the scripts ensure everything from the DB-IP's city version database is properly converted into basic letters or ASCII characters in the English conversion, but not for the other languages.
+You can change the language in [**./src/config.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/config.ts) file (`config.city.lang`), the script will only localize the country name. But for now, it's not recommended to use any non-English language for city-level ip2c, because the scripts ensure everything from the DB-IP's city version database is properly converted into basic letters or ASCII characters in the English conversion, but not for the other languages.
 
 ## CN City ip2c
 
 You can use QQWry's IP location database (QQ 纯真版 IP 数据库) to extend the country-level ip2c and get a **ip-to-country.csv** file with detailed Chinese IP location data.
 
-Download i2chan, an old tool written by "zhangshaox" which can merge a country-level **ip-to-country.csv** with QQWry's database. Unzip it.
+Download [i2chan](https://github.com/emulefanscom/misc/releases/download/i2chan/i2chan.7z), an old tool written by "zhangshaox" which can merge a country-level **ip-to-country.csv** with QQWry's database. Unzip it.
 
 Download QQWry's database from [their official website](https://www.cz88.net/), get **qqwry.dat** file.
 
@@ -68,13 +68,13 @@ yarn docncity
 
 And you will find your Simplified Chinese **ip-to-country.csv** in **./output_cncity/zh-CN** folder.
 
-You can change `config.cncity.lang` from `zh-CN` to `zh-TW`, `zh-HK` or `zh-SG` in **./src/config.ts** file, and re-run `yarn docncity`. (It's a bit slow, I'll make it faster)
+You can change `config.cncity.lang` from `zh-CN` to `zh-TW`, `zh-HK` or `zh-SG` in [**./src/config.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/config.ts) file, and re-run `yarn docncity`. (It's a bit slow, I'll make it faster)
 
 You can also use a non-Chinese language here.
 
 ## Encoding
 
-All generated **ip-to-country.csv** files use their traditional local encoding (see **./src/langs.ts**), if you want to use `UTF-8`, change `config.country.useUtf8` / `config.city.useUtf8` / `config.cncity.useUtf8` in **./src/config.ts**.
+All generated **ip-to-country.csv** files use their traditional local encoding (see [**./src/langs.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/langs.ts)), if you want to use `UTF-8`, change `config.country.useUtf8` / `config.city.useUtf8` / `config.cncity.useUtf8` in [**./src/config.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/config.ts).
 
 ## Compression
 
