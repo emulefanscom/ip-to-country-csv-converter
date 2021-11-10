@@ -2,7 +2,7 @@
 
 The scripts here can convert free IP location databases to eMule format **ip-to-country.csv**.
 
-The IP location databases in [sapics/ip-location-db](https://github.com/sapics/ip-location-db#readme) are recommended. By default we use [DB-IP](https://db-ip.com/)'s normal (country)-level and city-lever databases, which are released under [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+The IP location databases in [sapics/ip-location-db](https://github.com/sapics/ip-location-db#readme) are recommended. By default we use [DB-IP](https://db-ip.com/)'s normal (country)-level and city-level databases, which are released under [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
 We periodically run the script and generate **ip-to-country.csv** in these languages:
 
@@ -58,7 +58,7 @@ Open **i2chan.exe**, click "浏览" buttons to select the locations of your **ip
 
 A new **ip-to-country.csv** is generated, the backup of your old file is **ip-to-country.csv.bak**.
 
-Move **ip-to-country.csv** into `ip-to-country-csv-converter`'s root folder and rename the file as "**ip-to-country.cncity.temp.csv**".
+Move **ip-to-country.csv** into `ip-to-country-csv-converter`'s root folder and rename the file to "**ip-to-country.cncity.temp.csv**".
 
 Run:
 

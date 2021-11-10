@@ -53,6 +53,7 @@ const { tempCsvName, outputFolderName, useUtf8, normalizeEnglish } =
       newData,
       path.join('./', outputFolderName, lang, finalCsvName),
       ',',
+      true,
       useUtf8 ? 'utf8' : encoding,
     )
   }

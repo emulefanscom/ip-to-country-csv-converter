@@ -43,7 +43,7 @@ const { tempCsvName, lang, outputFolderName, useUtf8, normalizeEnglish } =
 
     let localStr = [loc3, loc2, loc1, codeLocals[code2L]]
       .filter((n) => n)
-      .join(', ')
+      .join(' - ')
     if (lang === 'en' && normalizeEnglish) {
       localStr = localStr
         .normalize('NFD')
@@ -69,6 +69,7 @@ const { tempCsvName, lang, outputFolderName, useUtf8, normalizeEnglish } =
     newData,
     path.join('./', outputFolderName, lang, finalCsvName),
     ',',
+    true,
     useUtf8 || !(lang in langs) ? 'utf8' : langs[lang],
   )
 })()

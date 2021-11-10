@@ -8,6 +8,7 @@ const writeCsv = <T>(
   twoDArr: T[][],
   filepath: string,
   delimiter: string = ',',
+  quoted: boolean = true,
   encoding: string = 'utf8',
   eol: string = '\r\n',
 ): Promise<string> =>
@@ -16,6 +17,7 @@ const writeCsv = <T>(
       twoDArr,
       {
         delimiter,
+        quoted,
       },
       (err, output) => {
         if (err) {

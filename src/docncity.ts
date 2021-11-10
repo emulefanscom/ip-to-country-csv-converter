@@ -45,6 +45,7 @@ const { lang, tempCsvName, outputFolderName, useUtf8 } = config.cncity
     newData,
     path.join('./', outputFolderName, lang, finalCsvName),
     ',',
+    true,
     useUtf8 || !(lang in langs) ? 'utf8' : langs[lang],
   )
 })()
