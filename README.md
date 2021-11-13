@@ -24,7 +24,7 @@ yarn
 
 ## Country-level ip2c
 
-Get all available lanugages' country-level **ip-to-country.csv** files:
+Get all available languages' country-level **ip-to-country.csv** files:
 
 ```
 yarn docountry

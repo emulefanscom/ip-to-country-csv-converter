@@ -12,7 +12,8 @@
     "docity": "yarn clear && tsc && node dist/docity.js",
     "docncity": "yarn clear && tsc && node dist/docncity.js",
     "zip": "yarn clear && tsc && node dist/zip.js",
-    "rmzip": "rimraf output*/**/*.zip"
+    "rmzip": "rimraf output*/**/*.zip",
+    "sort": "yarn clear && tsc && node dist/sort.js"
   },
   "homepage": "https://www.emulefans.com/news/plugin/ip-to-country/",
   "keywords": [
@@ -36,6 +37,6 @@
   },
   "devDependencies": {
     "@types/archiver": "^5.1.1",
-    "@types/node": "^16.11.6"
+    "@types/node": "^16.11.7"
   }
 }
