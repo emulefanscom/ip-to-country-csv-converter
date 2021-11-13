@@ -10,11 +10,9 @@ We periodically run the script and generate **ip-to-country.csv** in these langu
 - City-level ip2c: English (`en`).
 - CN City ip2c: Mainland China Simplified Chinese (`zh-CN`), Taiwan Traditional Chinese (`zh-TW`).
 
-New releases are uploaded onto [github.com/emulefanscom/ip2c](https://github.com/emulefanscom/ip2c).
+If you want to download the generated files, please see the table in the [**README of emulefanscom/ip2c repo**](https://github.com/emulefanscom/ip2c#readme), or read the [**Chinese articles on our eMuleFans.com 电骡爱好者 blog**](https://www.emulefans.com/news/plugin/ip-to-country/).
 
-They are also announced on [eMuleFans.com 电骡爱好者](https://www.emulefans.com/news/plugin/ip-to-country/), our Chinese language eMule blog, under [IP 地理位置 (ip-to-country)](https://www.emulefans.com/news/plugin/ip-to-country/) category.
-
-The TypeScript / JavaScript code in the repo is MIT-licensed.
+The TypeScript / JavaScript code in this repo is MIT-licensed.
 
 ## Install dependencies
 
