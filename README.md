@@ -6,7 +6,7 @@ The IP location databases in [sapics/ip-location-db](https://github.com/sapics/i
 
 We periodically run the script and generate **ip-to-country.csv** in these languages:
 
-- Country-level ip2c: English (`en`), Mainland China Simplified Chinese (`zh-CN`), Taiwan Traditional Chinese (`zh-TW`), Hong Kong Traditional Chinese (`zh-HK`), Singapore Simplified Chinese (`zh-SG`), French (`fr`), German (`de`), Spanish (`es`), Russian (`ru`), Japanese (`ja`), Brazilian Portuguese (`pt-BR`).
+- Country-level ip2c: English (`en`), Mainland China Simplified Chinese International Version (`zh-CN`), Mainland China Simplified Chinese China Version (`zh-CN_china`), Taiwan Traditional Chinese (`zh-TW`), Hong Kong Traditional Chinese (`zh-HK`), Singapore Simplified Chinese (`zh-SG`), French (`fr`), German (`de`), Spanish (`es`), Russian (`ru`), Japanese (`ja`), Brazilian Portuguese (`pt-BR`).
 - City-level ip2c: English (`en`).
 - CN City ip2c: Mainland China Simplified Chinese (`zh-CN`), Taiwan Traditional Chinese (`zh-TW`).
 
@@ -85,3 +85,7 @@ Run `yarn zip` to zip all existant **./output\*/\<LANGUAGE\>/ip-to-country.csv**
 - CN City: `ip-to-country_csv.cncity.zip` (if no lang code, it's `zh-CN`) / `ip-to-country_csv.cncity.zh-TW.zip`
 
 Run `yarn rmzip` to delete all **./output\*/\*\*/\*.zip**
+
+## Translation
+
+The translation data in **./country_codes/\<LANGUAGECODE\>.cvs** files are based on local language versions of [Wikipedia](https://www.wikipedia.org/), and GeoLite2 Country translations of [MaxMind](https://www.maxmind.com/), except for the Mainland China Simplified Chinese China Version (`zh-CN_china`) which is based on the articles from official websites of [Ministry of Foreign Affairs of the People's Republic of China](https://www.fmprc.gov.cn/web/gjhdq_676201/) and other official department of P. R. China.
