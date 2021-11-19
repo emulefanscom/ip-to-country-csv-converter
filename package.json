@@ -13,7 +13,8 @@
     "docncity": "yarn clear && tsc && node dist/docncity.js",
     "zip": "yarn clear && tsc && node dist/zip.js",
     "rmzip": "rimraf output*/**/*.zip",
-    "sort": "yarn clear && tsc && node dist/sort.js"
+    "sort": "yarn clear && tsc && node dist/sort.js",
+    "qqwry": "yarn clear && tsc && node dist/utils/qqwry_extract_countries.js"
   },
   "homepage": "https://www.emulefans.com/news/plugin/ip-to-country/",
   "keywords": [
@@ -29,14 +30,14 @@
   "license": "MIT",
   "dependencies": {
     "archiver": "^5.3.0",
-    "csv-parse": "^4.16.3",
-    "csv-stringify": "^5.6.5",
+    "csv-parse": "^5.0.3",
+    "csv-stringify": "^6.0.4",
     "iconv-lite": "^0.6.3",
     "rimraf": "^3.0.2",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
     "@types/archiver": "^5.1.1",
-    "@types/node": "^16.11.7"
+    "@types/node": "^16.11.9"
   }
 }

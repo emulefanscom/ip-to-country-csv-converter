@@ -1,4 +1,4 @@
-import parse from 'csv-parse'
+import { parse } from 'csv-parse'
 import fs from 'fs'
 import iconv from 'iconv-lite'
 

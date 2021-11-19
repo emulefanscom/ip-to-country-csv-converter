@@ -1,4 +1,4 @@
-import stringify from 'csv-stringify'
+import { stringify } from 'csv-stringify'
 import fs from 'fs'
 import iconv from 'iconv-lite'
 import path from 'path'

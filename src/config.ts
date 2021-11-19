@@ -33,10 +33,12 @@ const config = {
     /**
      * CNCITY SETTINGS
      */
-    lang: 'zh-CN',
+    lang: 'zh-CN', // should usually be 'zh-*'
     tempCsvName: 'ip-to-country.cncity.temp.csv',
     outputFolderName: 'output_cncity',
     useUtf8: false,
+    merge: true,
+    mergeNotAddCn: true, // when `merge` is `true`, just Chinese province/city such as '上海市静安区' will suffice, no need to add '中国'
   },
 }
 

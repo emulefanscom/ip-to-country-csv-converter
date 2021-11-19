@@ -14,7 +14,9 @@ If you want to download the generated files, please see the table in the [**READ
 
 The TypeScript / JavaScript code in this repo is MIT-licensed.
 
-## Install dependencies
+## Installation
+
+Install [Node.js](https://nodejs.org/en/download/) and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/) first. Then clone or download the repo and install dependencies:
 
 ```
 yarn
@@ -66,13 +68,15 @@ yarn docncity
 
 And you will find your Simplified Chinese **ip-to-country.csv** in **./output_cncity/zh-CN** folder.
 
-You can change `config.cncity.lang` from `zh-CN` to `zh-TW`, `zh-HK` or `zh-SG` in [**./src/config.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/config.ts) file, and re-run `yarn docncity`. (It's a bit slow, I'll make it faster)
+You can change `config.cncity.lang` from `zh-CN` to `zh-TW`, `zh-HK` or `zh-CN_china`, `zh-SG`, as well as other options in [**./src/config.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/config.ts) file, and re-run `yarn docncity`.
 
 You can also use a non-Chinese language here.
 
 ## Encoding
 
 All generated **ip-to-country.csv** files use their traditional local encoding (see [**./src/langs.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/langs.ts)), if you want to use `UTF-8`, change `config.country.useUtf8` / `config.city.useUtf8` / `config.cncity.useUtf8` in [**./src/config.ts**](https://github.com/emulefanscom/ip-to-country-csv-converter/blob/main/src/config.ts).
+
+It's possible some Chinese characters are outside `gb2312` / `big5`, obviously, `gbk`, `gb18030` and `big5hkscs` will be used to encode these characters.
 
 ## Compression
 
