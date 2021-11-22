@@ -1,6 +1,6 @@
 {
   "name": "ip-to-country-csv-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert free IP location databases to eMule format ip-to-country.csv",
   "repository": {
     "type": "git",
